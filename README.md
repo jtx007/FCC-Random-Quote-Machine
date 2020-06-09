@@ -12,4 +12,4 @@
 - HTML/CSS
 - FreeCodeCamp Test Script
 
-[demo-pic](src/assets/fcccquotemachine.png)
+![demo-pic](src/assets/fcccquotemachine.png)

@@ -13,11 +13,12 @@ const App = () => {
     const fetchRandomQuote = async () => {
         try {
             const response = await fetch(
-              "http://quotes.stormconsultancy.co.uk/random.json"
+              "https://thesimpsonsquoteapi.glitch.me/quotes"
             );
             const data = await response.json()
-            setAuthor(data.author);
-            setQuote(data.quote);
+            console.log(data)
+            setAuthor(data[0].character);
+            setQuote(data[0].quote);
         } catch (error) {
             console.log(error)
         }
@@ -25,7 +26,7 @@ const App = () => {
 
     return (
       <div className="quote-box-container">
-        <h1 className="headline">Random Tech Quotes</h1>
+        <h1 className="headline">Random Simpsons Quotes</h1>
 
         <QuoteBox author={author} quote={quote} fetchRandomQuote={fetchRandomQuote}/>
       </div>

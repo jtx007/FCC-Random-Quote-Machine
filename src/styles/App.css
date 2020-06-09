@@ -1,0 +1,83 @@
+html {
+  background-color: black;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.headline {
+    color: white
+}
+
+.quote-box-container {
+  height: 75vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+#quote-box {
+  border: 1px solid rgb(255, 106, 47);
+  width: 45vw;
+  height: 30vh;
+  margin: auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  background-color: rgb(214, 196, 196);
+  box-shadow: 30px 15px 1px 5px indianred;
+  padding: 20px;
+  text-align: center;
+}
+
+#text {
+    transition: ease-in 1s;
+}
+
+#button-container {
+    margin-top: 10px;
+  display: flex;
+  flex: row wrap;
+  justify-content: space-between;
+}
+
+#share-to-twitter-button {
+color: white;
+  height: 5vh;
+  padding: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  width: 9vw;
+  background-color: #2184c7;
+  padding: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#share-to-twitter-button:hover {
+    cursor: pointer;
+    background-color: #6ba9d3;
+
+}
+
+#tweet-quote {
+  text-decoration: none;
+  color: white;
+}
+
+#new-quote {
+  height: 5vh;
+  padding: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  width: 9vw;
+  background-color: lightcoral;
+  padding: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#new-quote:hover {
+  cursor: pointer;
+  background-color: rgb(218, 158, 158);
+}
